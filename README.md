@@ -9,8 +9,6 @@ Plugin updates the status once you open the app, working on real time status upd
 1. Install this plugin: `sudo npm i homebridge-frontier-silicon-plugin`
 2. Update your `config.json` configuration file
 
-
-
 ```json
 "accessories": [
 	{
@@ -25,13 +23,11 @@ Code is based on this repo: https://github.com/rudders/homebridge-http
 
 ### Todos
 
- - Volume Change
- - Status Updates
- - Channel Change
- - Clean up the code
+- Volume Change
+- Status Updates
+- Channel Change
+- Clean up the code
 
-
-License
-----
+## License
 
 MIT

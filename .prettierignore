@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
