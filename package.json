@@ -17,7 +17,11 @@
     "name": "Duncan Wilder"
   },
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node --test --experimental-test-module-mocks",
+    "test:watch": "node --test --watch --experimental-test-module-mocks"
   },
   "dependencies": {
     "homebridge": "1.10.0",
