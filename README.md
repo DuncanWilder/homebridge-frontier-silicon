@@ -1,4 +1,10 @@
-# homebridge-frontier-silicon-plugin
+> ⚠️ Not yet published to NPM, I'll get there soon!
+
+# homebridge-frontier-silicon-plugin-2025
+
+> Based on the work originally by [Boike Damhuis](https://github.com/boikedamhuis/homebridge-frontier-silicon), this is a fork of the original plugin, modernised and updated for the latest versions of Homebridge.
+>
+> Rather than trying to rewrite and maintain this manually, I've made extensive use of AI to build this. Less focussed on the code quality, more focused on getting it working (and keeping it working) with the latest versions of Homebridge.
 
 A Frontier Silicon plugin for homebridge (https://github.com/nfarina/homebridge) which integrates Frontier Silicon enabled devices with Homekit.
 
