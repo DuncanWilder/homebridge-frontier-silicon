@@ -1,0 +1,40 @@
+{
+  "name": "homebridge-frontier-silicon-plugin",
+  "version": "0.0.1",
+  "description": "Plugin for frontier silicon devices",
+  "license": "ISC",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DuncanWilder/homebridge-frontier-silicon"
+  },
+  "bugs": {
+    "url": "https://github.com/DuncanWilder/homebridge-frontier-silicon/issues"
+  },
+  "author": {
+    "name": "Duncan Wilder"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node --test --experimental-test-module-mocks",
+    "test:watch": "node --test --watch --experimental-test-module-mocks",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "validate": "npm run lint && npm run format:check && npm test"
+  },
+  "dependencies": {
+    "homebridge": "1.10.0",
+    "polling-to-event": "2.1.0",
+    "wifiradio": "0.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3"
+  }
+}
