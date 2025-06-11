@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "FrontierSiliconPlatform",
   "pluginType": "platform",
   "singular": true,
   "strictValidation": false,
@@ -7,10 +7,71 @@
     "type": "object",
     "properties": {
       "name": {
-        "title": "Name",
+        "title": "Platform Name",
         "type": "string",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "default": "Frontier Silicon Platform",
+        "description": "The name of this platform instance"
+      },
+      "devices": {
+        "title": "Devices",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "title": "Device Name",
+              "type": "string",
+              "required": true,
+              "description": "The name of the device as it will appear in HomeKit"
+            },
+            "ip": {
+              "title": "IP Address",
+              "type": "string",
+              "required": true,
+              "format": "ipv4",
+              "description": "The IP address of the Frontier Silicon device"
+            },
+            "pin": {
+              "title": "PIN",
+              "type": "string",
+              "default": "1234",
+              "description": "The PIN for the device (default is usually 1234)"
+            },
+            "service": {
+              "title": "Service Type",
+              "type": "string",
+              "default": "Switch",
+              "oneOf": [
+                { "title": "Switch", "enum": ["Switch"] },
+                { "title": "Lightbulb", "enum": ["Light"] }
+              ],
+              "description": "The type of HomeKit service to expose"
+            },
+            "switchHandling": {
+              "title": "Switch Handling",
+              "type": "string",
+              "default": "yes",
+              "oneOf": [
+                { "title": "Yes (Poll when requested)", "enum": ["yes"] },
+                { "title": "Realtime (Continuous polling)", "enum": ["realtime"] },
+                { "title": "No (Set only)", "enum": ["no"] }
+              ],
+              "description": "How to handle power state monitoring"
+            },
+            "brightnessHandling": {
+              "title": "Brightness Handling",
+              "type": "string",
+              "default": "no",
+              "oneOf": [
+                { "title": "No", "enum": ["no"] },
+                { "title": "Yes (Poll when requested)", "enum": ["yes"] },
+                { "title": "Realtime (Continuous polling)", "enum": ["realtime"] }
+              ],
+              "description": "How to handle brightness control (only for Light service)"
+            }
+          }
+        }
       }
     }
   }

@@ -1,6 +1,6 @@
 > ⚠️ Not yet published to NPM, I'll get there soon!
 
-# homebridge-frontier-silicon-plugin-2025
+# homebridge-frontier-silicon-plugin
 
 > Based on the work originally by [Boike Damhuis](https://github.com/boikedamhuis/homebridge-frontier-silicon), this is a fork of the original plugin, modernised and updated for the latest versions of Homebridge.
 >

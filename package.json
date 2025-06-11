@@ -1,19 +1,19 @@
 {
-  "name": "homebridge-plugin-name",
-  "displayName": "Plugin Name",
+  "name": "homebridge-frontier-silicon-plugin-2025",
+  "displayName": "Frontier Silicon Plugin",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
-  "description": "A short description about what your plugin does.",
-  "author": "Your Name",
-  "license": "Apache-2.0",
-  "homepage": "https://github.com/USERNAME/GITHUB_PROJECT_NAME#readme",
+  "description": "Plugin for frontier silicon devices",
+  "author": "Duncan Wilder",
+  "license": "ISC",
+  "homepage": "https://github.com/DuncanWilder/homebridge-frontier-silicon#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME.git"
+    "url": "https://github.com/DuncanWilder/homebridge-frontier-silicon.git"
   },
   "bugs": {
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME/issues"
+    "url": "https://github.com/DuncanWilder/homebridge-frontier-silicon/issues"
   },
   "keywords": [
     "homebridge-plugin"
@@ -27,10 +27,12 @@
     "build": "rimraf ./dist && tsc",
     "lint": "eslint . --max-warnings=0",
     "prepublishOnly": "npm run lint && npm run build",
-    "watch": "npm run build && npm link && nodemon"
+    "dev": "npm run build && npm link && nodemon"
   },
   "dependencies": {
-    "homebridge-lib": "^7.1.4"
+    "homebridge-lib": "^7.1.4",
+    "polling-to-event": "^2.1.0",
+    "wifiradio": "^0.4.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
