@@ -4,7 +4,7 @@ declare module 'wifiradio' {
     getPower(): Promise<string>;
     setPower(state: number): Promise<void>;
   }
-  export = WifiRadio;
+  export default WifiRadio;
 }
 
 declare module 'polling-to-event' {
@@ -19,5 +19,5 @@ declare module 'polling-to-event' {
     options?: PollingOptions
   ): NodeJS.EventEmitter;
 
-  export = pollingToEvent;
+  export default pollingToEvent;
 }
